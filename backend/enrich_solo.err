@@ -1,0 +1,58 @@
+2026-10-12 16:57:23,089 INFO fair-enrich: Worker 0/1: enriching 633 source-1613 companies
+2026-10-12 17:00:14,005 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact
+Call log:
+  - navigating to "http://www.z-wovens.com /contact", waiting until "domcontentloaded"
+
+2026-10-12 17:00:17,494 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact
+Call log:
+  - navigating to "http://www.z-wovens.com /contact", waiting until "domcontentloaded"
+
+2026-10-12 17:00:21,060 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about
+Call log:
+  - navigating to "http://www.z-wovens.com /about", waiting until "domcontentloaded"
+
+2026-10-12 17:00:24,316 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about
+Call log:
+  - navigating to "http://www.z-wovens.com /about", waiting until "domcontentloaded"
+
+2026-10-12 17:00:27,535 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /impressum
+Call log:
+  - navigating to "http://www.z-wovens.com /impressum", waiting until "domcontentloaded"
+
+2026-10-12 17:00:30,730 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /impressum
+Call log:
+  - navigating to "http://www.z-wovens.com /impressum", waiting until "domcontentloaded"
+
+2026-10-12 17:00:33,975 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /imprint
+Call log:
+  - navigating to "http://www.z-wovens.com /imprint", waiting until "domcontentloaded"
+
+2026-10-12 17:00:37,503 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /imprint
+Call log:
+  - navigating to "http://www.z-wovens.com /imprint", waiting until "domcontentloaded"
+
+2026-10-12 17:00:41,005 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /kontakt
+Call log:
+  - navigating to "http://www.z-wovens.com /kontakt", waiting until "domcontentloaded"
+
+2026-10-12 17:00:44,466 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /kontakt
+Call log:
+  - navigating to "http://www.z-wovens.com /kontakt", waiting until "domcontentloaded"
+
+2026-10-12 17:00:48,039 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about-us
+Call log:
+  - navigating to "http://www.z-wovens.com /about-us", waiting until "domcontentloaded"
+
+2026-10-12 17:00:51,591 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about-us
+Call log:
+  - navigating to "http://www.z-wovens.com /about-us", waiting until "domcontentloaded"
+
+2026-10-12 17:00:55,144 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact-us
+Call log:
+  - navigating to "http://www.z-wovens.com /contact-us", waiting until "domcontentloaded"
+
+2026-10-12 17:00:58,634 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact-us
+Call log:
+  - navigating to "http://www.z-wovens.com /contact-us", waiting until "domcontentloaded"
+
+2026-10-12 17:02:02,790 INFO fair-enrich: progress 10/633: 0 with email

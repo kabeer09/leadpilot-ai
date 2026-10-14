@@ -1,0 +1,48 @@
+{
+  "name": "WhatsApp — Follow-up Scheduler",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "hours", "hoursInterval": 6 }] }
+      },
+      "id": "wa-fu-sched",
+      "name": "Every 6 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/followups/scan",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{}",
+        "options": { "timeout": 120000 }
+      },
+      "id": "wa-fu-scan",
+      "name": "Scan due follow-ups",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "content": "## WhatsApp follow-up scheduler\nCalls POST /api/outreach/followups/scan. The backend queues ONE follow-up per sent email and only for ELIGIBLE contacts (approved, not opted-out/suppressed, replied leads excluded). The Approved Message Sender picks queued items up. The built-in hourly scheduler does the same job — use one driver to avoid duplicate queueing (the API rejects second follow-ups per email regardless).",
+        "height": 320,
+        "width": 360
+      },
+      "id": "wa-fu-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "Every 6 hours": { "main": [[{ "node": "Scan due follow-ups", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

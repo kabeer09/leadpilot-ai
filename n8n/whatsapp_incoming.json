@@ -1,0 +1,62 @@
+{
+  "name": "WhatsApp — Incoming Reply Listener",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": ["messages"]
+      },
+      "id": "wa-in-trigger",
+      "name": "WhatsApp Trigger (incoming)",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "credentials": {
+        "whatsAppApi": { "id": "REPLACE_WITH_YOUR_WHATSAPP_CREDENTIAL_ID", "name": "LeadPilot WhatsApp" }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Map an inbound WhatsApp message to the LeadPilot incoming webhook.\n// Backend resolves the outreach by provider message ID, then sender number.\nconst m = $input.first().json;\nconst msg = m.messages?.[0] || m;\nreturn [{ json: {\n  from_number: msg.from || '',\n  provider_message_id: msg.context?.id || msg.id || null,\n  body: msg.text?.body || ''\n} }];"
+      },
+      "id": "wa-in-map",
+      "name": "Map inbound message",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/webhooks/whatsapp/incoming",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": { "timeout": 15000 }
+      },
+      "id": "wa-in-post",
+      "name": "Post incoming webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## WhatsApp inbound replies (official webhook)\nForwards each inbound message to POST /api/webhooks/whatsapp/incoming. The backend classifies the reply, updates the lead immediately, stops automated follow-ups on interest/refusal/opt-out, and flags STOP-style opt-outs on the contact. Replies never trigger an automatic sales response.",
+        "height": 300,
+        "width": 360
+      },
+      "id": "wa-in-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "WhatsApp Trigger (incoming)": { "main": [[{ "node": "Map inbound message", "type": "main", "index": 0 }]] },
+    "Map inbound message": { "main": [[{ "node": "Post incoming webhook", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

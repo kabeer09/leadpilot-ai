@@ -1,0 +1,83 @@
+{
+  "name": "LeadPilot Gmail Replies",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {
+          "q": "newer_than:1d -from:me"
+        },
+        "options": {}
+      },
+      "id": "gmail-trigger",
+      "name": "Gmail Trigger (replies)",
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300],
+      "credentials": {
+        "gmailOAuth2Api": {
+          "id": "REPLACE_WITH_YOUR_GMAIL_CREDENTIAL_ID",
+          "name": "LeadPilot Gmail"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Map a Gmail message to the LeadPilot reply webhook.\n// outreach_id is omitted: the backend resolves the outreach\n// by matching From to the contact's business email.\nconst m = $input.first().json;\nconst headers = {};\nfor (const h of (m.payload?.headers || [])) headers[h.name.toLowerCase()] = h.value;\nreturn [{ json: {\n  event_type: 'reply',\n  from_address: (headers['from'] || '').replace(/.*<(.+)>.*/, '$1'),\n  subject: headers['subject'] || '',\n  body: m.snippet || ''\n} }];"
+      },
+      "id": "code-map",
+      "name": "Map to reply webhook",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/webhooks/gmail",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "http-reply",
+      "name": "Post reply webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## Gmail replies → LeadPilot (Phase 5)\nPolls Gmail for new inbound mail and posts each message to `POST /api/webhooks/gmail`. The backend matches `from_address` to the contact's business email and marks the latest SENT outreach REPLIED (lead → REPLIED + activity). No LeadPilot IDs needed in Gmail.\n\nRefine the Gmail filter (`q`) to your sending mailbox/label. AI reply classification lands in Phase 7.",
+        "height": 260,
+        "width": 340
+      },
+      "id": "note-replies",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 80]
+    }
+  ],
+  "connections": {
+    "Gmail Trigger (replies)": {
+      "main": [[{ "node": "Map to reply webhook", "type": "main", "index": 0 }]]
+    },
+    "Map to reply webhook": {
+      "main": [[{ "node": "Post reply webhook", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

@@ -1,0 +1,520 @@
+2026-10-10 22:18:44,768 INFO atl-enrich: Enriching 66/66 Atlanta companies
+2026-10-10 22:21:27,965 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:21:31,803 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:21:35,603 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/contact
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:21:39,109 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/contact
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:21:42,700 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/about
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:21:46,244 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/about
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:21:49,784 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/impressum
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:21:53,142 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/impressum
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:21:56,712 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/imprint
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:22:00,206 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/imprint
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:22:03,813 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/kontakt
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:22:07,332 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/kontakt
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:22:10,878 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/about-us
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:22:13,839 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/about-us
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:22:17,317 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/contact-us
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:22:20,844 WARNING app.services.enrichment: Crawl error for https://www.amcustomjewelry.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amcustomjewelry.com/contact-us
+Call log:
+  - navigating to "https://www.amcustomjewelry.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:22:56,335 INFO atl-enrich: progress 10/66: 5 with email
+2026-10-10 22:24:33,770 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/
+Call log:
+  - navigating to "https://www.afdesignnyc.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:24:37,119 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/
+Call log:
+  - navigating to "https://www.afdesignnyc.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:24:40,612 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/contact
+Call log:
+  - navigating to "https://www.afdesignnyc.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:24:43,975 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/contact
+Call log:
+  - navigating to "https://www.afdesignnyc.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:24:47,315 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/about
+Call log:
+  - navigating to "https://www.afdesignnyc.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:24:50,707 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/about
+Call log:
+  - navigating to "https://www.afdesignnyc.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:24:54,242 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/impressum
+Call log:
+  - navigating to "https://www.afdesignnyc.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:24:57,667 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/impressum
+Call log:
+  - navigating to "https://www.afdesignnyc.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:25:01,143 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/imprint
+Call log:
+  - navigating to "https://www.afdesignnyc.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:25:04,546 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/imprint
+Call log:
+  - navigating to "https://www.afdesignnyc.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:25:07,723 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/kontakt
+Call log:
+  - navigating to "https://www.afdesignnyc.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:25:10,968 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/kontakt
+Call log:
+  - navigating to "https://www.afdesignnyc.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:25:14,544 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/about-us
+Call log:
+  - navigating to "https://www.afdesignnyc.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:25:17,859 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/about-us
+Call log:
+  - navigating to "https://www.afdesignnyc.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:25:21,244 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/contact-us
+Call log:
+  - navigating to "https://www.afdesignnyc.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:25:24,858 WARNING app.services.enrichment: Crawl error for https://www.afdesignnyc.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.afdesignnyc.com/contact-us
+Call log:
+  - navigating to "https://www.afdesignnyc.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:26:59,496 INFO atl-enrich: progress 20/66: 8 with email
+2026-10-10 22:27:03,472 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:27:06,959 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:27:11,347 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/contact: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/contact
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:27:15,036 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/contact: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/contact
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:27:18,891 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/about: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/about
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:27:22,636 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/about: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/about
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:27:27,331 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/impressum: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/impressum
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:27:30,998 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/impressum: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/impressum
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:27:34,708 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/imprint: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/imprint
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:27:38,402 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/imprint: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/imprint
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:27:42,083 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/kontakt: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/kontakt
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:27:45,836 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/kontakt: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/kontakt
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:27:49,558 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/about-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/about-us
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:27:53,631 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/about-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/about-us
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:27:57,639 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/contact-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/contact-us
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:28:01,550 WARNING app.services.enrichment: Crawl error for https://www.aidthroughtrade.com/contact-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.aidthroughtrade.com/contact-us
+Call log:
+  - navigating to "https://www.aidthroughtrade.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:28:58,172 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:29:01,416 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:29:04,906 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/contact
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:29:08,193 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/contact
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:29:11,765 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/about
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:29:15,312 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/about
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:29:18,886 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/impressum
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:29:22,399 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/impressum
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:29:25,918 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/imprint
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:29:29,371 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/imprint
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:29:32,976 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/kontakt
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:29:36,496 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/kontakt
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:29:40,111 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/about-us
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:29:43,545 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/about-us
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:29:46,953 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/contact-us
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:29:50,371 WARNING app.services.enrichment: Crawl error for https://www.ajsdesignstudio.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ajsdesignstudio.com/contact-us
+Call log:
+  - navigating to "https://www.ajsdesignstudio.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:30:48,525 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/
+Call log:
+  - navigating to "https://www.alicesturzinger.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:31:04,261 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/
+Call log:
+  - navigating to "https://www.alicesturzinger.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:31:20,155 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/contact
+Call log:
+  - navigating to "https://www.alicesturzinger.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:31:36,016 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/contact
+Call log:
+  - navigating to "https://www.alicesturzinger.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:31:39,423 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/about
+Call log:
+  - navigating to "https://www.alicesturzinger.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:31:55,162 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/about
+Call log:
+  - navigating to "https://www.alicesturzinger.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:31:58,687 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/impressum
+Call log:
+  - navigating to "https://www.alicesturzinger.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:32:13,466 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/impressum
+Call log:
+  - navigating to "https://www.alicesturzinger.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:32:16,948 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/imprint
+Call log:
+  - navigating to "https://www.alicesturzinger.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:32:27,598 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/imprint
+Call log:
+  - navigating to "https://www.alicesturzinger.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:32:31,055 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/kontakt
+Call log:
+  - navigating to "https://www.alicesturzinger.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:32:46,810 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/kontakt
+Call log:
+  - navigating to "https://www.alicesturzinger.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:32:50,376 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/about-us
+Call log:
+  - navigating to "https://www.alicesturzinger.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:33:04,840 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/about-us
+Call log:
+  - navigating to "https://www.alicesturzinger.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:33:20,699 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/contact-us
+Call log:
+  - navigating to "https://www.alicesturzinger.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:33:24,191 WARNING app.services.enrichment: Crawl error for https://www.alicesturzinger.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.alicesturzinger.com/contact-us
+Call log:
+  - navigating to "https://www.alicesturzinger.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:35:49,714 INFO atl-enrich: progress 30/66: 12 with email
+2026-10-10 22:42:52,494 INFO atl-enrich: progress 40/66: 17 with email
+2026-10-10 22:46:12,375 WARNING app.services.enrichment: Crawl error for https://www.apaper.com: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/
+Call log:
+  - navigating to "https://www.apaper.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:46:15,990 WARNING app.services.enrichment: Crawl error for https://www.apaper.com: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/
+Call log:
+  - navigating to "https://www.apaper.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:46:19,938 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/contact: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/contact
+Call log:
+  - navigating to "https://www.apaper.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:46:23,747 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/contact: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/contact
+Call log:
+  - navigating to "https://www.apaper.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:46:27,471 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/about: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/about
+Call log:
+  - navigating to "https://www.apaper.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:46:31,220 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/about: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/about
+Call log:
+  - navigating to "https://www.apaper.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:46:34,859 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/impressum: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/impressum
+Call log:
+  - navigating to "https://www.apaper.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:46:38,883 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/impressum: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/impressum
+Call log:
+  - navigating to "https://www.apaper.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:46:43,053 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/imprint: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/imprint
+Call log:
+  - navigating to "https://www.apaper.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:46:46,721 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/imprint: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/imprint
+Call log:
+  - navigating to "https://www.apaper.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:46:51,010 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/kontakt: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/kontakt
+Call log:
+  - navigating to "https://www.apaper.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:46:54,876 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/kontakt: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/kontakt
+Call log:
+  - navigating to "https://www.apaper.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:46:58,557 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/about-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/about-us
+Call log:
+  - navigating to "https://www.apaper.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:47:02,274 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/about-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/about-us
+Call log:
+  - navigating to "https://www.apaper.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:47:05,927 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/contact-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/contact-us
+Call log:
+  - navigating to "https://www.apaper.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:47:09,522 WARNING app.services.enrichment: Crawl error for https://www.apaper.com/contact-us: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.apaper.com/contact-us
+Call log:
+  - navigating to "https://www.apaper.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:49:51,734 INFO atl-enrich: progress 50/66: 20 with email
+2026-10-10 22:51:15,024 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/
+Call log:
+  - navigating to "https://www.andreasrivets.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:51:18,732 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/
+Call log:
+  - navigating to "https://www.andreasrivets.com/", waiting until "domcontentloaded"
+
+2026-10-10 22:51:22,405 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/contact
+Call log:
+  - navigating to "https://www.andreasrivets.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:51:26,257 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/contact
+Call log:
+  - navigating to "https://www.andreasrivets.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:51:30,268 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/about
+Call log:
+  - navigating to "https://www.andreasrivets.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:51:33,812 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/about
+Call log:
+  - navigating to "https://www.andreasrivets.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:51:37,356 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/impressum
+Call log:
+  - navigating to "https://www.andreasrivets.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:51:40,949 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/impressum
+Call log:
+  - navigating to "https://www.andreasrivets.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:51:44,499 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/imprint
+Call log:
+  - navigating to "https://www.andreasrivets.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:51:47,997 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/imprint
+Call log:
+  - navigating to "https://www.andreasrivets.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:51:51,602 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/kontakt
+Call log:
+  - navigating to "https://www.andreasrivets.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:51:55,157 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/kontakt
+Call log:
+  - navigating to "https://www.andreasrivets.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:51:58,736 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/about-us
+Call log:
+  - navigating to "https://www.andreasrivets.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:52:02,302 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/about-us
+Call log:
+  - navigating to "https://www.andreasrivets.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:52:05,760 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/contact-us
+Call log:
+  - navigating to "https://www.andreasrivets.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:52:09,253 WARNING app.services.enrichment: Crawl error for https://www.andreasrivets.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.andreasrivets.com/contact-us
+Call log:
+  - navigating to "https://www.andreasrivets.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:53:43,350 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com", waiting until "domcontentloaded"
+
+2026-10-10 22:53:47,039 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com", waiting until "domcontentloaded"
+
+2026-10-10 22:53:50,535 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/contact
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:53:54,136 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/contact
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/contact", waiting until "domcontentloaded"
+
+2026-10-10 22:53:57,703 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/about
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:54:01,246 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/about
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/about", waiting until "domcontentloaded"
+
+2026-10-10 22:54:04,869 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/impressum
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:54:08,378 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/impressum
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/impressum", waiting until "domcontentloaded"
+
+2026-10-10 22:54:11,955 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/imprint
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:54:15,583 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/imprint
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/imprint", waiting until "domcontentloaded"
+
+2026-10-10 22:54:19,112 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/kontakt
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:54:22,474 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/kontakt
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-10 22:54:25,955 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/about-us
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:54:29,509 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/about-us
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/about-us", waiting until "domcontentloaded"
+
+2026-10-10 22:54:32,929 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/contact-us
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:54:36,456 WARNING app.services.enrichment: Crawl error for https://www.annekoplik.com; annekoplikwholesale.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.annekoplik.com; annekoplikwholesale.com/contact-us
+Call log:
+  - navigating to "https://www.annekoplik.com; annekoplikwholesale.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-10 22:55:06,023 INFO atl-enrich: progress 60/66: 22 with email
+2026-10-10 22:57:30,445 INFO atl-enrich: DONE: 66 processed, 25 with email

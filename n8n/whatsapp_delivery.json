@@ -1,0 +1,62 @@
+{
+  "name": "WhatsApp — Delivery and Failure Tracking",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": ["message_status"]
+      },
+      "id": "wa-st-trigger",
+      "name": "WhatsApp Trigger (status)",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "credentials": {
+        "whatsAppApi": { "id": "REPLACE_WITH_YOUR_WHATSAPP_CREDENTIAL_ID", "name": "LeadPilot WhatsApp" }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Map a provider status receipt to the LeadPilot status webhook.\nconst m = $input.first().json;\nconst st = m.statuses?.[0] || m;\nreturn [{ json: {\n  provider_message_id: st.id || null,\n  status: st.status || 'failed',\n  error_code: st.errors?.[0]?.code || null,\n  error_message: st.errors?.[0]?.title || null\n} }];"
+      },
+      "id": "wa-st-map",
+      "name": "Map status receipt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/webhooks/whatsapp/status",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": { "timeout": 15000 }
+      },
+      "id": "wa-st-post",
+      "name": "Post status webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## WhatsApp delivery tracking (sent/delivered/read/failed)\nForwards provider receipts to POST /api/webhooks/whatsapp/status. queued/sent/delivered/read/failed are stored per message with error codes. Provider failures never mark a message SENT.",
+        "height": 260,
+        "width": 360
+      },
+      "id": "wa-st-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "WhatsApp Trigger (status)": { "main": [[{ "node": "Map status receipt", "type": "main", "index": 0 }]] },
+    "Map status receipt": { "main": [[{ "node": "Post status webhook", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

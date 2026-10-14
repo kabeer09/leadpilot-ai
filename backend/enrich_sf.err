@@ -1,0 +1,271 @@
+2026-10-11 11:06:53,083 INFO fair-enrich: Enriching 151/151 source-1086 companies
+2026-10-11 11:08:13,770 WARNING app.services.enrichment: Crawl error for http://N/A: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/A
+Call log:
+  - navigating to "http://n/A", waiting until "domcontentloaded"
+
+2026-10-11 11:08:20,450 WARNING app.services.enrichment: Crawl error for http://N/A: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/A
+Call log:
+  - navigating to "http://n/A", waiting until "domcontentloaded"
+
+2026-10-11 11:08:27,209 WARNING app.services.enrichment: Crawl error for http://N/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/contact
+Call log:
+  - navigating to "http://n/contact", waiting until "domcontentloaded"
+
+2026-10-11 11:08:34,035 WARNING app.services.enrichment: Crawl error for http://N/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/contact
+Call log:
+  - navigating to "http://n/contact", waiting until "domcontentloaded"
+
+2026-10-11 11:08:40,832 WARNING app.services.enrichment: Crawl error for http://N/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/about
+Call log:
+  - navigating to "http://n/about", waiting until "domcontentloaded"
+
+2026-10-11 11:08:47,565 WARNING app.services.enrichment: Crawl error for http://N/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/about
+Call log:
+  - navigating to "http://n/about", waiting until "domcontentloaded"
+
+2026-10-11 11:08:54,093 WARNING app.services.enrichment: Crawl error for http://N/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/impressum
+Call log:
+  - navigating to "http://n/impressum", waiting until "domcontentloaded"
+
+2026-10-11 11:09:00,944 WARNING app.services.enrichment: Crawl error for http://N/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/impressum
+Call log:
+  - navigating to "http://n/impressum", waiting until "domcontentloaded"
+
+2026-10-11 11:09:07,571 WARNING app.services.enrichment: Crawl error for http://N/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/imprint
+Call log:
+  - navigating to "http://n/imprint", waiting until "domcontentloaded"
+
+2026-10-11 11:09:14,221 WARNING app.services.enrichment: Crawl error for http://N/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/imprint
+Call log:
+  - navigating to "http://n/imprint", waiting until "domcontentloaded"
+
+2026-10-11 11:09:21,193 WARNING app.services.enrichment: Crawl error for http://N/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/kontakt
+Call log:
+  - navigating to "http://n/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 11:09:27,812 WARNING app.services.enrichment: Crawl error for http://N/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/kontakt
+Call log:
+  - navigating to "http://n/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 11:09:34,643 WARNING app.services.enrichment: Crawl error for http://N/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/about-us
+Call log:
+  - navigating to "http://n/about-us", waiting until "domcontentloaded"
+
+2026-10-11 11:09:41,244 WARNING app.services.enrichment: Crawl error for http://N/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/about-us
+Call log:
+  - navigating to "http://n/about-us", waiting until "domcontentloaded"
+
+2026-10-11 11:09:47,842 WARNING app.services.enrichment: Crawl error for http://N/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/contact-us
+Call log:
+  - navigating to "http://n/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 11:09:54,689 WARNING app.services.enrichment: Crawl error for http://N/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://n/contact-us
+Call log:
+  - navigating to "http://n/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 11:12:09,801 INFO fair-enrich: progress 10/151: 4 with email
+2026-10-11 11:18:15,169 INFO fair-enrich: progress 20/151: 9 with email
+2026-10-11 11:27:49,648 INFO fair-enrich: progress 30/151: 15 with email
+2026-10-11 11:55:47,210 INFO fair-enrich: progress 40/151: 19 with email
+2026-10-11 12:02:57,571 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/", waiting until "domcontentloaded"
+
+2026-10-11 12:03:01,235 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/", waiting until "domcontentloaded"
+
+2026-10-11 12:03:04,707 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/contact
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:03:08,639 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/contact
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:03:12,160 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/about
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/about", waiting until "domcontentloaded"
+
+2026-10-11 12:03:15,755 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/about
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/about", waiting until "domcontentloaded"
+
+2026-10-11 12:03:19,325 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/impressum
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:03:23,084 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/impressum
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:03:26,748 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/imprint
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:03:30,327 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/imprint
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:03:33,696 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/kontakt
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:03:37,269 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/kontakt
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:03:41,787 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/about-us
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:03:45,112 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/about-us
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:03:48,339 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/contact-us
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:03:51,764 WARNING app.services.enrichment: Crawl error for https://www.amicaaccessorieswholesale.co.uk/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.amicaaccessorieswholesale.co.uk/contact-us
+Call log:
+  - navigating to "https://www.amicaaccessorieswholesale.co.uk/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:05:33,825 INFO fair-enrich: progress 50/151: 25 with email
+2026-10-11 12:05:37,811 WARNING app.services.enrichment: Crawl error for http://btconnect.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/
+Call log:
+  - navigating to "http://btconnect.com/", waiting until "domcontentloaded"
+
+2026-10-11 12:05:41,150 WARNING app.services.enrichment: Crawl error for http://btconnect.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/
+Call log:
+  - navigating to "http://btconnect.com/", waiting until "domcontentloaded"
+
+2026-10-11 12:05:44,638 WARNING app.services.enrichment: Crawl error for http://btconnect.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/contact
+Call log:
+  - navigating to "http://btconnect.com/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:05:48,511 WARNING app.services.enrichment: Crawl error for http://btconnect.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/contact
+Call log:
+  - navigating to "http://btconnect.com/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:05:52,111 WARNING app.services.enrichment: Crawl error for http://btconnect.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/about
+Call log:
+  - navigating to "http://btconnect.com/about", waiting until "domcontentloaded"
+
+2026-10-11 12:05:55,854 WARNING app.services.enrichment: Crawl error for http://btconnect.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/about
+Call log:
+  - navigating to "http://btconnect.com/about", waiting until "domcontentloaded"
+
+2026-10-11 12:05:59,265 WARNING app.services.enrichment: Crawl error for http://btconnect.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/impressum
+Call log:
+  - navigating to "http://btconnect.com/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:06:03,905 WARNING app.services.enrichment: Crawl error for http://btconnect.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/impressum
+Call log:
+  - navigating to "http://btconnect.com/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:06:08,374 WARNING app.services.enrichment: Crawl error for http://btconnect.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/imprint
+Call log:
+  - navigating to "http://btconnect.com/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:06:13,241 WARNING app.services.enrichment: Crawl error for http://btconnect.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/imprint
+Call log:
+  - navigating to "http://btconnect.com/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:06:17,017 WARNING app.services.enrichment: Crawl error for http://btconnect.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/kontakt
+Call log:
+  - navigating to "http://btconnect.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:06:20,660 WARNING app.services.enrichment: Crawl error for http://btconnect.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/kontakt
+Call log:
+  - navigating to "http://btconnect.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:06:24,488 WARNING app.services.enrichment: Crawl error for http://btconnect.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/about-us
+Call log:
+  - navigating to "http://btconnect.com/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:06:29,020 WARNING app.services.enrichment: Crawl error for http://btconnect.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/about-us
+Call log:
+  - navigating to "http://btconnect.com/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:06:32,860 WARNING app.services.enrichment: Crawl error for http://btconnect.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/contact-us
+Call log:
+  - navigating to "http://btconnect.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:06:36,573 WARNING app.services.enrichment: Crawl error for http://btconnect.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://btconnect.com/contact-us
+Call log:
+  - navigating to "http://btconnect.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:10:58,640 INFO fair-enrich: progress 60/151: 30 with email
+2026-10-11 12:14:46,643 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com", waiting until "domcontentloaded"
+
+2026-10-11 12:14:50,241 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com", waiting until "domcontentloaded"
+
+2026-10-11 12:14:54,176 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:15:00,054 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact", waiting until "domcontentloaded"
+
+2026-10-11 12:15:10,285 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about", waiting until "domcontentloaded"
+
+2026-10-11 12:15:13,950 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about", waiting until "domcontentloaded"
+
+2026-10-11 12:15:17,658 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:15:21,755 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/impressum", waiting until "domcontentloaded"
+
+2026-10-11 12:15:27,354 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:15:31,415 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/imprint", waiting until "domcontentloaded"
+
+2026-10-11 12:15:35,515 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:15:46,502 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-11 12:16:02,172 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:16:06,520 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/about-us", waiting until "domcontentloaded"
+
+2026-10-11 12:16:15,737 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:16:24,597 WARNING app.services.enrichment: Crawl error for http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us
+Call log:
+  - navigating to "http://www.artsycouture.com www.artsycouturebusiness.com www.nationsphotolab.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-11 12:16:56,724 INFO fair-enrich: progress 70/151: 36 with email
+2026-10-11 12:29:15,022 INFO fair-enrich: progress 80/151: 38 with email
+2026-10-11 12:37:39,724 INFO fair-enrich: progress 90/151: 44 with email
+2026-10-11 12:43:35,266 INFO fair-enrich: progress 100/151: 50 with email
+2026-10-11 12:48:04,509 INFO fair-enrich: progress 110/151: 54 with email
+2026-10-11 12:51:58,547 INFO fair-enrich: progress 120/151: 61 with email
+2026-10-11 13:02:21,407 INFO fair-enrich: progress 130/151: 65 with email
+2026-10-11 13:06:22,941 INFO fair-enrich: progress 140/151: 72 with email

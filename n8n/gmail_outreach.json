@@ -1,0 +1,137 @@
+{
+  "name": "LeadPilot Gmail Outreach",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "sched-poll",
+      "name": "Every 5 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/ready",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "http-ready",
+      "name": "Get ready outreach",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Split the ready-array into one item per email.\n// Input is the HTTP response body: an array of outreach payloads.\nconst data = $input.first().json;\nconst items = Array.isArray(data) ? data : (data.items || []);\nreturn items.map((o) => ({ json: o }));"
+      },
+      "id": "code-split",
+      "name": "Split outreach items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "subject": "=Hi {{ $json.company_name }} — partnership from New Look Impex: {{ $json.subject }}",
+        "emailType": "text",
+        "message": "= {{ $json.message }}",
+        "options": {
+          "sendTo": "={{ $json.to_email }}"
+        }
+      },
+      "id": "gmail-send",
+      "name": "Send Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, 300],
+      "credentials": {
+        "gmailOAuth2Api": {
+          "id": "REPLACE_WITH_YOUR_GMAIL_CREDENTIAL_ID",
+          "name": "LeadPilot Gmail"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/sent",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"message_id\": \"{{ $('Send Gmail').item.json.id }}\" }",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "http-sent",
+      "name": "Ack sent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/failed",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"error\": \"{{ $json.error.message || $json.error }}\" }",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "http-failed",
+      "name": "Report failure",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 420]
+    },
+    {
+      "parameters": {
+        "content": "## LeadPilot → Gmail (Phase 5)\n1. Polls `GET /api/outreach/ready` every 5 min.\n2. Sends one Gmail per queued item.\n3. `POST /api/outreach/{id}/sent` on success (idempotent), `/failed` on error.\n\nSetup: set env `LEADPILOT_API_URL` (e.g. http://host.docker.internal:8001), connect your Gmail OAuth2 credential, then activate. See n8n/README.md.",
+        "height": 260,
+        "width": 320
+      },
+      "id": "note-setup",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 80]
+    }
+  ],
+  "connections": {
+    "Every 5 minutes": {
+      "main": [[{ "node": "Get ready outreach", "type": "main", "index": 0 }]]
+    },
+    "Get ready outreach": {
+      "main": [[{ "node": "Split outreach items", "type": "main", "index": 0 }]]
+    },
+    "Split outreach items": {
+      "main": [[{ "node": "Send Gmail", "type": "main", "index": 0 }]]
+    },
+    "Send Gmail": {
+      "main": [
+        [{ "node": "Ack sent", "type": "main", "index": 0 }],
+        [{ "node": "Report failure", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

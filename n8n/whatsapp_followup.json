@@ -1,0 +1,134 @@
+{
+  "name": "LeadPilot WhatsApp Follow-up",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "sched-wa",
+      "name": "Every 15 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/ready?channel=WHATSAPP",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "http-ready-wa",
+      "name": "Get ready WhatsApp",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Split the ready-array into one item per message.\nconst data = $input.first().json;\nconst items = Array.isArray(data) ? data : (data.items || []);\nreturn items.map((o) => ({ json: o }));"
+      },
+      "id": "code-split-wa",
+      "name": "Split WhatsApp items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendText",
+        "to": "= {{ $json.to_phone }}",
+        "text": "= {{ $json.message }}",
+        "options": {}
+      },
+      "id": "wa-send",
+      "name": "Send WhatsApp",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [900, 300],
+      "credentials": {
+        "whatsAppApi": {
+          "id": "REPLACE_WITH_YOUR_WHATSAPP_CREDENTIAL_ID",
+          "name": "LeadPilot WhatsApp"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/sent",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"message_id\": \"{{ $('Send WhatsApp').item.json.id }}\" }",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "http-sent-wa",
+      "name": "Ack sent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/failed",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"error\": \"{{ $json.error.message || $json.error }}\" }",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "http-failed-wa",
+      "name": "Report failure",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 420]
+    },
+    {
+      "parameters": {
+        "content": "## 24h WhatsApp follow-up (Phase 6)\nPolls `GET /api/outreach/ready?channel=WHATSAPP` every 15 min. Items are queued by the LeadPilot follow-up scheduler (hourly scan, 24h after the sent email, WhatsApp number required, one follow-up per email, replied/unsubscribed leads excluded) or manually from the lead detail page.\n\nSend node: connect a WhatsApp Business Cloud credential. Outside the 24h customer-service window a pre-approved template may be required — swap the message for your template and pass $json.message as a parameter.",
+        "height": 300,
+        "width": 340
+      },
+      "id": "note-wa",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 80]
+    }
+  ],
+  "connections": {
+    "Every 15 minutes": {
+      "main": [[{ "node": "Get ready WhatsApp", "type": "main", "index": 0 }]]
+    },
+    "Get ready WhatsApp": {
+      "main": [[{ "node": "Split WhatsApp items", "type": "main", "index": 0 }]]
+    },
+    "Split WhatsApp items": {
+      "main": [[{ "node": "Send WhatsApp", "type": "main", "index": 0 }]]
+    },
+    "Send WhatsApp": {
+      "main": [
+        [{ "node": "Ack sent", "type": "main", "index": 0 }],
+        [{ "node": "Report failure", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

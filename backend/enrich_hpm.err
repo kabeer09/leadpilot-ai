@@ -1,0 +1,331 @@
+2026-10-12 14:57:17,728 INFO fair-enrich: Enriching 709/709 source-1613 companies
+2026-10-12 14:59:14,461 INFO fair-enrich: progress 10/709: 9 with email
+2026-10-12 15:03:21,069 INFO fair-enrich: progress 20/709: 12 with email
+2026-10-12 15:09:17,935 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact
+Call log:
+  - navigating to "http://www.z-wovens.com /contact", waiting until "domcontentloaded"
+
+2026-10-12 15:09:21,512 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact
+Call log:
+  - navigating to "http://www.z-wovens.com /contact", waiting until "domcontentloaded"
+
+2026-10-12 15:09:24,833 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about
+Call log:
+  - navigating to "http://www.z-wovens.com /about", waiting until "domcontentloaded"
+
+2026-10-12 15:09:27,688 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about
+Call log:
+  - navigating to "http://www.z-wovens.com /about", waiting until "domcontentloaded"
+
+2026-10-12 15:09:31,066 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /impressum
+Call log:
+  - navigating to "http://www.z-wovens.com /impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:09:34,403 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /impressum
+Call log:
+  - navigating to "http://www.z-wovens.com /impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:09:37,789 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /imprint
+Call log:
+  - navigating to "http://www.z-wovens.com /imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:09:41,240 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /imprint
+Call log:
+  - navigating to "http://www.z-wovens.com /imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:09:44,671 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /kontakt
+Call log:
+  - navigating to "http://www.z-wovens.com /kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:09:48,102 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /kontakt
+Call log:
+  - navigating to "http://www.z-wovens.com /kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:09:51,473 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about-us
+Call log:
+  - navigating to "http://www.z-wovens.com /about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:09:54,890 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /about-us
+Call log:
+  - navigating to "http://www.z-wovens.com /about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:09:58,327 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact-us
+Call log:
+  - navigating to "http://www.z-wovens.com /contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:10:01,741 WARNING app.services.enrichment: Crawl error for http://www.z-wovens.com /contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.z-wovens.com /contact-us
+Call log:
+  - navigating to "http://www.z-wovens.com /contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:13:06,794 INFO fair-enrich: progress 30/709: 17 with email
+2026-10-12 15:17:43,728 INFO fair-enrich: progress 40/709: 21 with email
+2026-10-12 15:20:42,213 INFO fair-enrich: progress 50/709: 26 with email
+2026-10-12 15:27:51,729 INFO fair-enrich: progress 60/709: 30 with email
+2026-10-12 15:36:33,831 INFO fair-enrich: progress 70/709: 34 with email
+2026-10-12 15:40:37,065 INFO fair-enrich: progress 80/709: 38 with email
+2026-10-12 15:48:52,237 INFO fair-enrich: progress 90/709: 40 with email
+2026-10-12 15:49:56,064 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/
+Call log:
+  - navigating to "http://www.artframemart.com/", waiting until "domcontentloaded"
+
+2026-10-12 15:49:59,464 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/
+Call log:
+  - navigating to "http://www.artframemart.com/", waiting until "domcontentloaded"
+
+2026-10-12 15:50:02,852 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/contact
+Call log:
+  - navigating to "http://www.artframemart.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 15:50:06,193 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/contact
+Call log:
+  - navigating to "http://www.artframemart.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 15:50:09,511 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/about
+Call log:
+  - navigating to "http://www.artframemart.com/about", waiting until "domcontentloaded"
+
+2026-10-12 15:50:12,880 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/about
+Call log:
+  - navigating to "http://www.artframemart.com/about", waiting until "domcontentloaded"
+
+2026-10-12 15:50:16,224 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/impressum
+Call log:
+  - navigating to "http://www.artframemart.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:50:19,558 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/impressum
+Call log:
+  - navigating to "http://www.artframemart.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:50:22,980 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/imprint
+Call log:
+  - navigating to "http://www.artframemart.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:50:26,320 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/imprint
+Call log:
+  - navigating to "http://www.artframemart.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:50:29,714 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/kontakt
+Call log:
+  - navigating to "http://www.artframemart.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:50:33,130 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/kontakt
+Call log:
+  - navigating to "http://www.artframemart.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:50:36,471 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/about-us
+Call log:
+  - navigating to "http://www.artframemart.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:50:39,845 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/about-us
+Call log:
+  - navigating to "http://www.artframemart.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:50:43,253 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/contact-us
+Call log:
+  - navigating to "http://www.artframemart.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:50:46,630 WARNING app.services.enrichment: Crawl error for http://www.artframemart.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artframemart.com/contact-us
+Call log:
+  - navigating to "http://www.artframemart.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:56:20,152 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/", waiting until "domcontentloaded"
+
+2026-10-12 15:56:23,478 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/", waiting until "domcontentloaded"
+
+2026-10-12 15:56:26,802 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/contact
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 15:56:30,160 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/contact
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 15:56:33,478 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/about
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/about", waiting until "domcontentloaded"
+
+2026-10-12 15:56:36,863 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/about
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/about", waiting until "domcontentloaded"
+
+2026-10-12 15:56:40,203 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/impressum
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:56:43,530 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/impressum
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 15:56:46,849 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/imprint
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:56:50,218 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/imprint
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 15:56:53,527 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/kontakt
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:56:56,890 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/kontakt
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 15:57:06,998 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/about-us
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:57:10,413 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/about-us
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 15:57:14,939 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/contact-us
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:57:18,439 WARNING app.services.enrichment: Crawl error for http://www.artandantiquehunter.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.artandantiquehunter.com/contact-us
+Call log:
+  - navigating to "http://www.artandantiquehunter.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 15:57:20,466 INFO fair-enrich: progress 100/709: 42 with email
+2026-10-12 16:01:00,495 INFO fair-enrich: progress 110/709: 46 with email
+2026-10-12 16:03:48,848 INFO fair-enrich: progress 120/709: 51 with email
+2026-10-12 16:09:01,438 INFO fair-enrich: progress 130/709: 54 with email
+2026-10-12 16:12:32,359 INFO fair-enrich: progress 140/709: 58 with email
+2026-10-12 16:18:10,449 INFO fair-enrich: progress 150/709: 60 with email
+2026-10-12 16:22:55,315 INFO fair-enrich: progress 160/709: 64 with email
+2026-10-12 16:23:03,106 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/", waiting until "domcontentloaded"
+
+2026-10-12 16:23:06,760 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/", waiting until "domcontentloaded"
+
+2026-10-12 16:23:15,874 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/contact
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 16:23:19,680 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/contact
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 16:23:30,345 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/about
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/about", waiting until "domcontentloaded"
+
+2026-10-12 16:23:33,969 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/about
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/about", waiting until "domcontentloaded"
+
+2026-10-12 16:23:43,221 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/impressum
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 16:23:46,797 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/impressum
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 16:23:54,600 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/imprint
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 16:23:58,318 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/imprint
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 16:24:06,303 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/kontakt
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 16:24:09,849 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/kontakt
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 16:24:17,291 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/about-us
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 16:24:21,111 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/about-us
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 16:24:28,681 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/contact-us
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 16:24:32,388 WARNING app.services.enrichment: Crawl error for http://www.bellahomefabrics.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.bellahomefabrics.com/contact-us
+Call log:
+  - navigating to "http://www.bellahomefabrics.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 16:30:53,386 INFO fair-enrich: progress 170/709: 68 with email
+2026-10-12 16:39:29,886 INFO fair-enrich: progress 180/709: 73 with email
+2026-10-12 16:39:33,327 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/
+Call log:
+  - navigating to "http:// www.blanco.com/", waiting until "domcontentloaded"
+
+2026-10-12 16:39:37,869 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/
+Call log:
+  - navigating to "http:// www.blanco.com/", waiting until "domcontentloaded"
+
+2026-10-12 16:39:42,249 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/contact
+Call log:
+  - navigating to "http:// www.blanco.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 16:39:46,770 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/contact: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/contact
+Call log:
+  - navigating to "http:// www.blanco.com/contact", waiting until "domcontentloaded"
+
+2026-10-12 16:39:51,468 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/about
+Call log:
+  - navigating to "http:// www.blanco.com/about", waiting until "domcontentloaded"
+
+2026-10-12 16:39:56,332 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/about: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/about
+Call log:
+  - navigating to "http:// www.blanco.com/about", waiting until "domcontentloaded"
+
+2026-10-12 16:40:01,013 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/impressum
+Call log:
+  - navigating to "http:// www.blanco.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 16:40:05,166 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/impressum: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/impressum
+Call log:
+  - navigating to "http:// www.blanco.com/impressum", waiting until "domcontentloaded"
+
+2026-10-12 16:40:09,534 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/imprint
+Call log:
+  - navigating to "http:// www.blanco.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 16:40:14,808 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/imprint: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/imprint
+Call log:
+  - navigating to "http:// www.blanco.com/imprint", waiting until "domcontentloaded"
+
+2026-10-12 16:40:19,481 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/kontakt
+Call log:
+  - navigating to "http:// www.blanco.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 16:40:23,852 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/kontakt: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/kontakt
+Call log:
+  - navigating to "http:// www.blanco.com/kontakt", waiting until "domcontentloaded"
+
+2026-10-12 16:40:28,342 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/about-us
+Call log:
+  - navigating to "http:// www.blanco.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 16:40:32,998 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/about-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/about-us
+Call log:
+  - navigating to "http:// www.blanco.com/about-us", waiting until "domcontentloaded"
+
+2026-10-12 16:40:37,670 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/contact-us
+Call log:
+  - navigating to "http:// www.blanco.com/contact-us", waiting until "domcontentloaded"
+
+2026-10-12 16:40:42,211 WARNING app.services.enrichment: Crawl error for http:// www.blanco.com/contact-us: Page.goto: net::ERR_NAME_NOT_RESOLVED at http:// www.blanco.com/contact-us
+Call log:
+  - navigating to "http:// www.blanco.com/contact-us", waiting until "domcontentloaded"
+

@@ -1,0 +1,55 @@
+{
+  "name": "WhatsApp — Contact Eligibility",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "hours", "hoursInterval": 12 }] }
+      },
+      "id": "wa-elig-sched",
+      "name": "Every 12 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/companies?limit=200&has_phone=true",
+        "options": { "timeout": 60000 }
+      },
+      "id": "wa-elig-fetch",
+      "name": "Fetch phone contacts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Eligibility triage (no messages sent here).\n// eligible: approved before | needs-approval: scraped number with source URL |\n// ineligible: no number, opted out, or suppressed.\nconst items = $input.first().json;\nconst list = Array.isArray(items) ? items : (items.items || []);\nreturn list.flatMap((c) => (c.contacts || []).map((ct) => ({ json: {\n  company_id: c.id, company: c.company_name, contact_id: ct.id,\n  number: ct.whatsapp_number || ct.phone,\n  eligible: ct.whatsapp_eligible === true,\n  opted_out: ct.consent_status === 'opted_out',\n  source_url: ct.whatsapp_source_url || ct.email_source_url || null,\n  verdict: ct.whatsapp_eligible === true ? 'eligible'\n    : ct.consent_status === 'opted_out' ? 'ineligible-opted-out'\n    : (ct.whatsapp_source_url || ct.email_source_url) ? 'needs-approval' : 'ineligible-no-evidence'\n} })));"
+      },
+      "id": "wa-elig-code",
+      "name": "Triage eligibility",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## WhatsApp eligibility (sends NOTHING)\nTriages every phone contact into eligible / needs-approval / ineligible. A scraped number is NEVER assumed to have WhatsApp: it needs human approval (Lead detail page → Approve WhatsApp, or POST /api/data-quality/whatsapp/approve/{contact_id}) before the Approved Message Sender may use it. Opt-outs and suppressions are always ineligible.\n\nRequires env LEADPILOT_API_URL.",
+        "height": 300,
+        "width": 360
+      },
+      "id": "wa-elig-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "Every 12 hours": { "main": [[{ "node": "Fetch phone contacts", "type": "main", "index": 0 }]] },
+    "Fetch phone contacts": { "main": [[{ "node": "Triage eligibility", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

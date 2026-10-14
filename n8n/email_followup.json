@@ -1,0 +1,78 @@
+{
+  "name": "LeadPilot Email Follow-up (24h)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "id": "sched-fu",
+      "name": "Every 6 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/followups/bulk",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"limit\": 20, \"dry_run\": false }",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "id": "http-bulk-fu",
+      "name": "Send due follow-ups",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/summary",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "http-summary",
+      "name": "Refresh dashboard stats",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## 24h email follow-ups (auto)\nCalls `POST /api/outreach/followups/bulk` every 6h. The backend sends at most `limit` polite follow-ups, each inside the original Gmail thread, and only when: the first email is older than FOLLOWUP_DELAY_HOURS (default 24h), no reply/bounce/unsubscribe exists, and no follow-up was sent before. Fail-closed: if Gmail or the DB is unreachable, nothing sends.\n\nThe backend scheduler does the same job hourly (FOLLOWUP_AUTO_SEND_ENABLED) — use this workflow OR the built-in scheduler, not both at full rate, to avoid double follow-ups (the API caps at 1 follow-up per lead regardless).\n\n`GET /api/outreach/summary` keeps dashboard numbers fresh after each run.",
+        "height": 340,
+        "width": 360
+      },
+      "id": "note-fu",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "Every 6 hours": {
+      "main": [[{ "node": "Send due follow-ups", "type": "main", "index": 0 }]]
+    },
+    "Send due follow-ups": {
+      "main": [[{ "node": "Refresh dashboard stats", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

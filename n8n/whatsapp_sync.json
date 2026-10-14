@@ -1,0 +1,58 @@
+{
+  "name": "WhatsApp — Dashboard Sync",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "hours", "hoursInterval": 1 }] }
+      },
+      "id": "wa-sync-sched",
+      "name": "Every hour",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/automation/health",
+        "options": { "timeout": 30000 }
+      },
+      "id": "wa-sync-health",
+      "name": "Fetch automation health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/summary",
+        "options": { "timeout": 30000 }
+      },
+      "id": "wa-sync-summary",
+      "name": "Fetch outreach summary",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "content": "## WhatsApp dashboard sync\nPolls automation health + outreach summary hourly so the Automation page reflects WhatsApp sends, replies, failures and pending queue without manual refresh. All numbers come from real outreach records; failures surface in latest_errors.",
+        "height": 280,
+        "width": 360
+      },
+      "id": "wa-sync-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "Every hour": { "main": [[{ "node": "Fetch automation health", "type": "main", "index": 0 }]] },
+    "Fetch automation health": { "main": [[{ "node": "Fetch outreach summary", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

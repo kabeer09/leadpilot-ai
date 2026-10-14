@@ -1,0 +1,110 @@
+{
+  "name": "WhatsApp — Approved Message Sender",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "minutes", "minutesInterval": 15 }] }
+      },
+      "id": "wa-send-sched",
+      "name": "Every 15 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.LEADPILOT_API_URL }}/api/outreach/ready?channel=WHATSAPP",
+        "options": { "timeout": 30000 }
+      },
+      "id": "wa-send-ready",
+      "name": "Get ready WhatsApp",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Split ready items. Backend only queues ELIGIBLE contacts (approved +\n// not opted-out/suppressed), so anything arriving here is authorized.\nconst data = $input.first().json;\nconst items = Array.isArray(data) ? data : (data.items || []);\nreturn items.map((o) => ({ json: o }));"
+      },
+      "id": "wa-send-split",
+      "name": "Split items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendText",
+        "to": "= {{ $json.to_phone }}",
+        "text": "= {{ $json.message }}",
+        "options": {}
+      },
+      "id": "wa-send-msg",
+      "name": "Send WhatsApp (official API)",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [900, 300],
+      "credentials": {
+        "whatsAppApi": { "id": "REPLACE_WITH_YOUR_WHATSAPP_CREDENTIAL_ID", "name": "LeadPilot WhatsApp" }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/sent",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"message_id\": \"{{ $('Send WhatsApp (official API)').item.json.id }}\" }",
+        "options": { "timeout": 15000 }
+      },
+      "id": "wa-send-ack",
+      "name": "Ack sent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "= {{ $env.LEADPILOT_API_URL }}/api/outreach/{{ $json.id }}/failed",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"error\": \"{{ $json.error.message || $json.error }}\" }",
+        "options": { "timeout": 15000 }
+      },
+      "id": "wa-send-fail",
+      "name": "Report failure",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 420]
+    },
+    {
+      "parameters": {
+        "content": "## Approved WhatsApp sender (official Business Cloud API only)\nSends ONLY backend-queued items — the queue enforces eligibility (human-approved, not opted-out, not suppressed). Outside Meta's 24h customer-service window use an approved template: set template_name on the outreach and swap this node to sendTemplate. Provider message IDs return via Ack sent; failures via Report failure (provider errors never mark SENT).",
+        "height": 340,
+        "width": 360
+      },
+      "id": "wa-send-note",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [200, 60]
+    }
+  ],
+  "connections": {
+    "Every 15 minutes": { "main": [[{ "node": "Get ready WhatsApp", "type": "main", "index": 0 }]] },
+    "Get ready WhatsApp": { "main": [[{ "node": "Split items", "type": "main", "index": 0 }]] },
+    "Split items": { "main": [[{ "node": "Send WhatsApp (official API)", "type": "main", "index": 0 }]] },
+    "Send WhatsApp (official API)": {
+      "main": [
+        [{ "node": "Ack sent", "type": "main", "index": 0 }],
+        [{ "node": "Report failure", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

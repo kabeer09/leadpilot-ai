@@ -1,0 +1,178 @@
+{
+  "companies": [
+    {
+      "name": "All exhibitors",
+      "description": "2M2 Group, located in Båstad, Sweden, specializes in trading and direct import from Europe and Asia. With a focus on direct...",
+      "website": "https://ambiente.messefrankfurt.com/watchlist-en-gb?exhibition=AMBIENTE",
+      "emails": [],
+      "phones": [
+        "2027"
+      ],
+      "whatsapp": []
+    },
+    {
+      "name": "Product groups",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Table & Table Select",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Crystal glass",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Glass",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Porcelain",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Ceramics",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Silverware and silver / gold plated metalware",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Metalware",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Table decoration",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Table textiles",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Miscellaneous",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "HoReCa",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Cook & Cut",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Cutlery, knives and accessories",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Cooking and frying dishes",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Kitchen dishes",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Kitchen appliances and machines",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Electrical Kitchen appliances and machines",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Kitchen and built-in electrical appliances",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Barbecue and barbecue accessories",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "HoReCa",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Specialist publishing houses & Associacions",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Modern Kitchen & Baking",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Kitchen accessories",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Design-oriented kitchen accessories",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Drinking bottles, thermos flasks and containers",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Food storage jars and boxes",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Bar and drink accessories",
+      "description": "",
+      "website": null
+    },
+    {
+      "name": "Culinary gifts",
+      "description": "",
+      "website": null
+    }
+  ],
+  "enriched_companies": [
+    {
+      "name": "All exhibitors",
+      "description": "2M2 Group, located in Båstad, Sweden, specializes in trading and direct import from Europe and Asia. With a focus on direct...",
+      "website": "https://ambiente.messefrankfurt.com/watchlist-en-gb?exhibition=AMBIENTE",
+      "emails": [],
+      "phones": [
+        "2027"
+      ],
+      "whatsapp": []
+    }
+  ],
+  "stats": {
+    "total_companies": 30,
+    "with_contacts": 1,
+    "with_emails": 0,
+    "with_phones": 1,
+    "with_whatsapp": 0
+  }
+}
